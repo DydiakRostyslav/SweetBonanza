@@ -11,7 +11,7 @@ import SwiftUI
 struct com_bonz_swt_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
         }
     }
 }

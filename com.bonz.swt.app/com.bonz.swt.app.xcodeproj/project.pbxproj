@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE573E182B7B918000767849 /* com_bonz_swt_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E172B7B918000767849 /* com_bonz_swt_appApp.swift */; };
-		CE573E1A2B7B918000767849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E192B7B918000767849 /* ContentView.swift */; };
+		CE573E1A2B7B918000767849 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E192B7B918000767849 /* MenuView.swift */; };
 		CE573E1C2B7B918300767849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE573E1B2B7B918300767849 /* Assets.xcassets */; };
 		CE573E1F2B7B918300767849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE573E1E2B7B918300767849 /* Preview Assets.xcassets */; };
+		CE573E2D2B7B9B5100767849 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E2C2B7B9B5100767849 /* PlayView.swift */; };
+		CE573E2F2B7B9B5D00767849 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E2E2B7B9B5D00767849 /* SettingsView.swift */; };
+		CE573E312B7B9B6900767849 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E302B7B9B6900767849 /* RulesView.swift */; };
+		CE573E332B7B9B7400767849 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E322B7B9B7400767849 /* AboutUsView.swift */; };
+		CE573E382B7BCC7800767849 /* CherryBombOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE573E372B7BCC7800767849 /* CherryBombOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE573E142B7B918000767849 /* com.bonz.swt.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.bonz.swt.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE573E172B7B918000767849 /* com_bonz_swt_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = com_bonz_swt_appApp.swift; sourceTree = "<group>"; };
-		CE573E192B7B918000767849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE573E192B7B918000767849 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CE573E1B2B7B918300767849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE573E1E2B7B918300767849 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE573E2C2B7B9B5100767849 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		CE573E2E2B7B9B5D00767849 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE573E302B7B9B6900767849 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		CE573E322B7B9B7400767849 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		CE573E372B7BCC7800767849 /* CherryBombOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CherryBombOne-Regular.ttf"; sourceTree = "<group>"; };
+		CE573E392B7BCCB500767849 /* com-bonz-swt-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "com-bonz-swt-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,11 @@
 		CE573E162B7B918000767849 /* com.bonz.swt.app */ = {
 			isa = PBXGroup;
 			children = (
-				CE573E172B7B918000767849 /* com_bonz_swt_appApp.swift */,
-				CE573E192B7B918000767849 /* ContentView.swift */,
+				CE573E392B7BCCB500767849 /* com-bonz-swt-app-Info.plist */,
+				CE573E262B7B9AA700767849 /* Scenes */,
+				CE573E252B7B9A9800767849 /* Model */,
 				CE573E1B2B7B918300767849 /* Assets.xcassets */,
+				CE573E362B7BCC5100767849 /* Fonts */,
 				CE573E1D2B7B918300767849 /* Preview Content */,
 			);
 			path = com.bonz.swt.app;
@@ -65,6 +78,74 @@
 				CE573E1E2B7B918300767849 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE573E252B7B9A9800767849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE573E262B7B9AA700767849 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E172B7B918000767849 /* com_bonz_swt_appApp.swift */,
+				CE573E272B7B9ADB00767849 /* Menu */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CE573E272B7B9ADB00767849 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E192B7B918000767849 /* MenuView.swift */,
+				CE573E282B7B9AF300767849 /* PlayView */,
+				CE573E292B7B9AF900767849 /* SettingsView */,
+				CE573E2A2B7B9B0000767849 /* RulesView */,
+				CE573E2B2B7B9B0700767849 /* AboutUsView */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CE573E282B7B9AF300767849 /* PlayView */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E2C2B7B9B5100767849 /* PlayView.swift */,
+			);
+			path = PlayView;
+			sourceTree = "<group>";
+		};
+		CE573E292B7B9AF900767849 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E2E2B7B9B5D00767849 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		CE573E2A2B7B9B0000767849 /* RulesView */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E302B7B9B6900767849 /* RulesView.swift */,
+			);
+			path = RulesView;
+			sourceTree = "<group>";
+		};
+		CE573E2B2B7B9B0700767849 /* AboutUsView */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E322B7B9B7400767849 /* AboutUsView.swift */,
+			);
+			path = AboutUsView;
+			sourceTree = "<group>";
+		};
+		CE573E362B7BCC5100767849 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE573E372B7BCC7800767849 /* CherryBombOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE573E382B7BCC7800767849 /* CherryBombOne-Regular.ttf in Resources */,
 				CE573E1F2B7B918300767849 /* Preview Assets.xcassets in Resources */,
 				CE573E1C2B7B918300767849 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE573E1A2B7B918000767849 /* ContentView.swift in Sources */,
+				CE573E2D2B7B9B5100767849 /* PlayView.swift in Sources */,
+				CE573E312B7B9B6900767849 /* RulesView.swift in Sources */,
+				CE573E2F2B7B9B5D00767849 /* SettingsView.swift in Sources */,
+				CE573E1A2B7B918000767849 /* MenuView.swift in Sources */,
+				CE573E332B7B9B7400767849 /* AboutUsView.swift in Sources */,
 				CE573E182B7B918000767849 /* com_bonz_swt_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +361,7 @@
 				DEVELOPMENT_TEAM = 8N7X6FY62X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "com-bonz-swt-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +391,7 @@
 				DEVELOPMENT_TEAM = 8N7X6FY62X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "com-bonz-swt-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
