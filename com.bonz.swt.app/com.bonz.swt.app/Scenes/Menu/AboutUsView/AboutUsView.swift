@@ -12,13 +12,14 @@ struct AboutUsView: View {
     
     var btnBack : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
-    }) {
-        HStack {
-            Image("iconBack")
-                .aspectRatio(contentMode: .fit)
-                .foregroundColor(.white)
+    })
+        {
+            HStack {
+                Image("iconBack")
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+            }
         }
-    }
     }
     
     var body: some View {
@@ -27,26 +28,37 @@ struct AboutUsView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Text("About Us View")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            VStack {
-                                Text("About Us").font(.custom("CherryBombOne-Regular", size: 40))
-                                    .foregroundStyle(.white)
-                            }
+
+            ZStack {
+                Image("RectangleFon")
+                    .cornerRadius(27)
+                    .padding([.leading, .trailing], 16)
+                
+                VStack {
+                    Text("")
+                        .padding(30)
+                        .multilineTextAlignment(.center)
+                        
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Text("About Us").font(.custom("CherryBombOne-Regular", size: 40))
+                                .foregroundStyle(.white)
                         }
                     }
+                }
             }
+            
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: btnBack)
-            .font(.custom("CherryBombOne-Regular", size: 47))
+            .font(.custom("CherryBombOne-Regular", size: 27))
             .foregroundStyle(.white)
         }
     }
 }
+
 
 #Preview {
     AboutUsView()
