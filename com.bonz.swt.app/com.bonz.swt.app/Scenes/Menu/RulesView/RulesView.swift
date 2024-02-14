@@ -37,7 +37,7 @@ struct RulesView: View {
                     .padding([.leading, .trailing], 16)
                 
                 VStack {
-                    Text("Your goal is to position the game elements correctly. At the beginning of the game there will be a window with the location of the elements, you need to remember them and then place them accordingly. You earn points for each placed element. The game ends when the time is up, if everything is correct - you win, otherwise you lose.")
+                    Text("Your goal is to position the game elements correctly.\n\n At the beginning of the game there will be a window with the location of the elements, you need to remember them and then place them accordingly. You earn points for each placed element. The game ends when the time is up, if everything is correct - you win, otherwise you lose.")
                         .padding(30)
                         .multilineTextAlignment(.center)
                     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WinOrLoseView: View {
     
-    @State var countrPoint = 1
+    @State var countrPoint = 120
     
     var body: some View {
         NavigationStack {
@@ -34,8 +34,14 @@ struct WinOrLoseView: View {
                             .padding(.bottom, 180)
                     }
                     
-                    Image("CountePoint")
-                        .padding(.top, 50)
+                    ZStack {
+                        Image("CountePoint")
+                        
+                        Text(String(countrPoint))
+                            .font(.custom("CherryBombOne-Regular", size: 40))
+                            .foregroundStyle(.white)
+                    }
+                    .padding(.top, 50)
                     
                     HStack {
                         NavigationLink(destination: MenuView()) {

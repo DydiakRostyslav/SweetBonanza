@@ -27,10 +27,14 @@ struct PlayView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                Text("Timer: \(timeRemaining)")
-                    .font(.largeTitle)
-                    .padding(.bottom, 100)
+            ZStack {
+                Image("Timer")
+                    .edgesIgnoringSafeArea(.all)
+                
+                Text(timerText)
+                    .font(.custom("CherryBombOne-Regular", size: 13))
+                    .foregroundStyle(.white)
+                    .padding(.leading, 22)
                     .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { _ in
                         guard self.isActiveTimer else { return }
                         
@@ -43,9 +47,12 @@ struct PlayView: View {
                             self.onTimerFinished()
                         }
                     }
-                
+            }
+            .padding(.bottom, 700)
+
+            VStack {
                 Image("REMEMBER")
-                .padding(.bottom, 500)
+                    .padding(.bottom, 400)
             }
             .onDisappear {
                 self.stopTimer()
@@ -77,6 +84,13 @@ struct PlayView: View {
         self.timeRemaining = 4
         self.isActiveTimer = true
         self.isTimerFinished = false
+    }
+    
+    var timerText: String {
+        let minutes = timeRemaining / 60
+        let seconds = timeRemaining % 60
+        
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }
 
