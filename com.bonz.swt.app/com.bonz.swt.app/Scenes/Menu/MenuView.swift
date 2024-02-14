@@ -18,6 +18,11 @@ struct MenuView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 
+                Image("LightBG")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                
                 VStack(spacing: 20) {
                     NavigationLink(destination: PlayView()) {
                         Image("buttonPlay")
