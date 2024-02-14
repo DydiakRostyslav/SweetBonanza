@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var checkSound: Bool = true
     @State var checkMusic: Bool = false
     

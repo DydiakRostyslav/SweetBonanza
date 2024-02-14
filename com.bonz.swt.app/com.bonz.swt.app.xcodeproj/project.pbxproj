@@ -18,8 +18,7 @@
 		CE573E382B7BCC7800767849 /* CherryBombOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE573E372B7BCC7800767849 /* CherryBombOne-Regular.ttf */; };
 		CE573E3D2B7CC09F00767849 /* CheckToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E3C2B7CC09F00767849 /* CheckToggleStyle.swift */; };
 		CE573E3F2B7CDDF600767849 /* RememberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E3E2B7CDDF600767849 /* RememberView.swift */; };
-		CE573E412B7CE67E00767849 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E402B7CE67E00767849 /* WinView.swift */; };
-		CE573E432B7CE69600767849 /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E422B7CE69600767849 /* LoseView.swift */; };
+		CE573E412B7CE67E00767849 /* WinOrLoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE573E402B7CE67E00767849 /* WinOrLoseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +35,7 @@
 		CE573E392B7BCCB500767849 /* com-bonz-swt-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "com-bonz-swt-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE573E3C2B7CC09F00767849 /* CheckToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckToggleStyle.swift; sourceTree = "<group>"; };
 		CE573E3E2B7CDDF600767849 /* RememberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberView.swift; sourceTree = "<group>"; };
-		CE573E402B7CE67E00767849 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
-		CE573E422B7CE69600767849 /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
+		CE573E402B7CE67E00767849 /* WinOrLoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinOrLoseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CE573E192B7B918000767849 /* MenuView.swift */,
-				CE573E282B7B9AF300767849 /* PlayView */,
+				CE573E282B7B9AF300767849 /* PlayViews */,
 				CE573E292B7B9AF900767849 /* SettingsView */,
 				CE573E2A2B7B9B0000767849 /* RulesView */,
 				CE573E2B2B7B9B0700767849 /* AboutUsView */,
@@ -116,15 +114,14 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		CE573E282B7B9AF300767849 /* PlayView */ = {
+		CE573E282B7B9AF300767849 /* PlayViews */ = {
 			isa = PBXGroup;
 			children = (
 				CE573E2C2B7B9B5100767849 /* PlayView.swift */,
 				CE573E3E2B7CDDF600767849 /* RememberView.swift */,
-				CE573E402B7CE67E00767849 /* WinView.swift */,
-				CE573E422B7CE69600767849 /* LoseView.swift */,
+				CE573E402B7CE67E00767849 /* WinOrLoseView.swift */,
 			);
-			path = PlayView;
+			path = PlayViews;
 			sourceTree = "<group>";
 		};
 		CE573E292B7B9AF900767849 /* SettingsView */ = {
@@ -234,11 +231,10 @@
 				CE573E2D2B7B9B5100767849 /* PlayView.swift in Sources */,
 				CE573E312B7B9B6900767849 /* RulesView.swift in Sources */,
 				CE573E3D2B7CC09F00767849 /* CheckToggleStyle.swift in Sources */,
-				CE573E432B7CE69600767849 /* LoseView.swift in Sources */,
 				CE573E2F2B7B9B5D00767849 /* SettingsView.swift in Sources */,
 				CE573E1A2B7B918000767849 /* MenuView.swift in Sources */,
 				CE573E332B7B9B7400767849 /* AboutUsView.swift in Sources */,
-				CE573E412B7CE67E00767849 /* WinView.swift in Sources */,
+				CE573E412B7CE67E00767849 /* WinOrLoseView.swift in Sources */,
 				CE573E182B7B918000767849 /* com_bonz_swt_appApp.swift in Sources */,
 				CE573E3F2B7CDDF600767849 /* RememberView.swift in Sources */,
 			);

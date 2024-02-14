@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AboutUsView: View {
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var btnBack : some View { Button(action: {
@@ -23,6 +24,7 @@ struct AboutUsView: View {
     }
     
     var body: some View {
+        
         ZStack {
             Image("menuBG")
                 .resizable()

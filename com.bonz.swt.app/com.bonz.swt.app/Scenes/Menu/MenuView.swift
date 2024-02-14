@@ -51,9 +51,10 @@ struct MenuView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 274, height: 92)
                     }
-                }
+                }       
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

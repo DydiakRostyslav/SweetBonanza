@@ -1,28 +1,44 @@
 //
-//  PlayView.swift
+//  RememberView.swift
 //  com.bonz.swt.app
 //
-//  Created by Rostyslav on 13.02.2024.
+//  Created by Rostyslav on 14.02.2024.
 //
 
 import SwiftUI
 
-struct PlayView: View {
-    @State private var timeRemaining = 2
+struct RememberView: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @State private var timeRemaining = 7
     @State private var isActiveTimer = true
     @State private var isTimerFinished = false
     
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    })
+        {
+            HStack {
+                Image("iconBack")
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+            }
+        }
+    }
     var body: some View {
         ZStack {
-            Image("RememberBG")
+            Image("menuBG")
                 .resizable()
-                .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
-            Image("RectangleFon")
+            Image("RememberGameBG")
                 .resizable()
+                .edgesIgnoringSafeArea(.all)
+            
+            Image("LightBG")
+                .resizable()
+                .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -41,9 +57,6 @@ struct PlayView: View {
                             self.onTimerFinished()
                         }
                     }
-                
-                Image("REMEMBER")
-                .padding(.bottom, 500)
             }
             .onDisappear {
                 self.stopTimer()
@@ -53,13 +66,15 @@ struct PlayView: View {
             }
             .background(
                 NavigationLink(
-                    destination: RememberView(),
+                    destination: WinOrLoseView(),
                     isActive: $isTimerFinished,
                     label: { EmptyView() }
                 )
                 .hidden()
             )
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: btnBack)
     }
     
     private func onTimerFinished() {
@@ -71,12 +86,12 @@ struct PlayView: View {
     }
     
     private func resetTimer() {
-        self.timeRemaining = 2
+        self.timeRemaining = 7
         self.isActiveTimer = true
         self.isTimerFinished = false
     }
 }
 
 #Preview {
-    PlayView()
+    RememberView()
 }

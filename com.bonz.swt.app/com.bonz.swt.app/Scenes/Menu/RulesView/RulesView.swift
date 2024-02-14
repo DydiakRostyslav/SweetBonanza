@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RulesView: View {
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var btnBack : some View { Button(action: {

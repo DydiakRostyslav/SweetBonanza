@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CheckToggleStyle: ToggleStyle {
+    
     func makeBody(configuration: Configuration) -> some View {
         HStack {
             configuration.label
